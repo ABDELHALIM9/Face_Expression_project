@@ -17,7 +17,7 @@ def predict_expression(file):
 
 def main():
     st.info(__doc__)
-    image = st.file_uploader("Upload Image",type = ["jpg","png"])
+    image = st.file_uploader("Upload Image",type = ["jpg","png", "jpeg"])
     show_image = st.empty()
 
     if not image:

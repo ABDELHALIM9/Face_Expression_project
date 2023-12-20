@@ -9,11 +9,6 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import StreamingResponse
 import os
 import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense,InputLayer, Activation, Dropout, BatchNormalization
 
 app = FastAPI(title='Deploying a ML Model with FastAPI')
 model = tf.keras.models.load_model(r"C:\Users\eid\Downloads\Github-repo\Face_Expression_project\models\model_optimal.h5",compile=False)
